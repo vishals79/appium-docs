@@ -12,21 +12,21 @@
 - bintray {
     - publish = true
     - configurations = ['archives']
-    - user = bintrayUser                       ---> properties.gradle
-    - key = bintrayKey                         ---> properties.gradle
+    - user = bintrayUser                       ** ---> properties.gradle **
+    - key = bintrayKey                         ** ---> properties.gradle **
     - pkg {
         - repo = 'maven'
         - userOrg = 'appium'
-        - name = "${ddGroup}:${ddArtifactId}"  ---> properties.gradle
-        - websiteUrl = ddWebsite               ---> properties.gradle
-        - issueTrackerUrl = ddTracker          ---> properties.gradle
-        - vcsUrl = ddGit                       ---> properties.gradle
-        - desc = ddDescription                 ---> properties.gradle
+        - name = "${ddGroup}:${ddArtifactId}"  ** ---> properties.gradle **
+        - websiteUrl = ddWebsite               ** ---> properties.gradle **
+        - issueTrackerUrl = ddTracker          ** ---> properties.gradle **
+        - vcsUrl = ddGit                       ** ---> properties.gradle **
+        - desc = ddDescription                 ** ---> properties.gradle **
         - licenses = ['The Apache Software License, Version 2.0']
         - publicDownloadNumbers = true
         - version {
-            - name = ddVersion                 ---> properties.gradle
-            - desc = ddDescription             ---> properties.gradle
+            - name = ddVersion                 ** ---> properties.gradle **
+            - desc = ddDescription             ** ---> properties.gradle **
         - }
     - }
 - }
